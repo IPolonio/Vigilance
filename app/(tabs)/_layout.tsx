@@ -32,6 +32,25 @@ export default function TabLayout() {
           ),
         }}
       />
+        <Tabs.Screen
+        name="HomeScreen"
+        options={{
+          title: 'Eventos',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'eye' : 'code-slash-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="IncidentDetailScreen"
+        options={{
+          title: 'Registrar',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'eye' : 'code-slash-outline'} color={color} />
+          ),
+        }}
+      />
     </Tabs>
+    
   );
 }
